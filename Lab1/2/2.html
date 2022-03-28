@@ -1,0 +1,286 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            [class*="col-"] {
+                float: left;
+                padding: 2.5%;
+            }
+            .col-1 {width: 6.25%;}
+            .col-2 {width: 12.5%;}
+            .col-3 {width: 18.75%;}
+            .col-4 {width: 25%;}
+            .col-5 {width: 31.25%;}
+            .col-6 {width: 37.5%;}
+            .col-7 {width: 43.75%;}
+            .col-8 {width: 50%;}
+            .col-9 {width: 56.25%;}
+            .col-10 {width: 62.5%;}
+            .col-11 {width: 68.75;}
+            .col-12 {width: 75%;}
+            .col-13 {width: 81.25%;}
+            .col-14 {width: 87.5%;}
+            .col-15 {width: 93.75%;}
+            .col-16 {width: 100%;}
+            header{
+                background-color: rgba(235, 151, 25, 0.856);
+                display: flex;
+                justify-content: space-between;
+                
+            }
+            #img1{
+                max-width: 20%;
+                height: 20%;
+                border-radius: 10%;
+            }
+            #innerDiv1{
+                width: 70%;
+                height:75%;
+                color: white;
+            }
+            p{
+                font-size: 1rem;
+                
+            }
+            section{
+                display: flex;
+                flex-direction: column;
+            }
+            h2{
+                text-align: center;
+            }
+            #lang{
+                display: flex;
+                flex-direction: column;
+            }
+            .centered{
+                text-align: center;
+                font-size: 1rem;
+            }
+            .colored{
+                padding: 10px;
+                background-color: rgba(235, 151, 25, 0.856);
+                color: white;
+            }
+            #skills,#info{
+                display: flex;
+            }
+            progress{
+                background-color: rgb(214, 214, 214);
+            }
+            #pr1::-moz-progress-bar {background-color: rgba(235, 151, 25, 0.856) !important;}
+            #pr2::-moz-progress-bar {background-color: rgba(25, 204, 235, 0.856) !important;}
+            #pr3::-moz-progress-bar {background-color: rgba(252, 24, 24, 0.63) !important;}
+            footer{
+                display: flex;
+                height: 4vh;
+
+            }
+            #div1{
+                width: 33.33%;
+                height: 4vh;
+                background-color: rgba(252, 24, 24, 0.63);
+            }
+            #div2{
+                width: 33.33%;
+                height: 4vh;
+                background-color: rgba(235, 151, 25, 0.856);
+            }
+            #div3{
+                width: 33.33%;
+                height: 4vh;
+                background-color: rgba(25, 204, 235, 0.856);
+            }
+        </style>
+    </head>
+    <body>
+        <header class="col-16">
+            <img id="img1"src="male.png" alt="">
+            <div id="innerDiv1">
+                <h1>Andrew Holoom</h5>
+                <p style="font-size: 15px;"><strong>professional</strong></p><br>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, quis. Cum quae odio dolore a, assumenda quas labore tenetur consectetur commodi quam esse animi consequatur mollitia alias error quis incidunt.</p>
+            </div>
+        </header>
+        <div id="main">
+            <section class="col-7">
+                <div>
+                    <h2>Contact</h2>
+                    <p><img src="home.png" style="height: 12px; width: 12px;"> 123 Park Avenue, Michigin, MI</p>
+                    <p><img src="mobile.png" style="height: 12px; width: 12px;"> 123 456 7899</p>
+                    <p><img src="mail.png" style="height: 12px; width: 12px;"> info@hloom.com</p>
+                    <p><img src="link.png" style="height: 12px; width: 12px;"> www.hloom.com</p><br>
+                </div>
+                <div id="lang">
+                    <h2>Languages</h2>
+                    <p class="centered"><strong>English</strong></p>
+                    <progress id="pr1" value="70" max="100"></progress>
+                    <p class="centered"><strong>German</strong></p>
+                    <progress id="pr2" value="30" max="100"></progress>
+                    <p class="centered"><strong>Spanish</strong></p>
+                    <progress id="pr3" value="90" max="100"></progress><br>
+                </div>
+                <div>
+                    <h2>Skills</h2>
+                    <div id="skills">
+                        <canvas id="canvas1" height="50" width="50"></canvas>
+                        <canvas id="canvas2" height="50" width="50"></canvas>
+                        <canvas id="canvas3" height="50" width="50"></canvas>
+                        <canvas id="canvas4" height="50" width="50"></canvas>
+                    </div>
+                </div>
+                <div>
+                    <h2>Online Info</h2>
+                    <div id="info">
+                        <p style="font-size: 12px;"><img src="facebook.png" style="height: 20px; width: 20px;"> /hoolm</p>
+                        <p style="font-size: 12px;"><img src="google.png" style="height: 20px; width: 20px;" id="google"> /hoolm</p>    
+                    </div>
+                </div>
+            </section>
+            <section class="col-9">
+                <div>
+                    <h2 class="colored">Achievements</h2>
+                    <h3>Lorem Project</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, odit delectus quas repellendus qui, temporibus, laborum deleniti quasi unde recusandae culpa? Cupiditate architecto voluptate beatae sunt, laboriosam suscipit excepturi consectetur?</p>
+                    <h3>Vivamus Project</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, odit delectus quas repellendus qui, temporibus, laborum deleniti quasi unde recusandae culpa? Cupiditate architecto voluptate beatae sunt, laboriosam suscipit excepturi consectetur?</p>
+                    <h3>Numc Project</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, odit delectus quas repellendus qui, temporibus, laborum deleniti quasi unde recusandae culpa? Cupiditate architecto voluptate beatae sunt, laboriosam suscipit excepturi consectetur?</p>
+                </div>
+                <div>
+                    <h2 class="colored">Education</h2>
+                    <h3>1997-2001 ABC School</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, odit delectus quas repellendus qui, temporibus, laborum deleniti quasi unde recusandae culpa? Cupiditate architecto voluptate beatae sunt, laboriosam suscipit excepturi consectetur?</p>
+                    <h3>2001-2004 Ohaio University</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, odit delectus quas repellendus qui, temporibus, laborum deleniti quasi unde recusandae culpa? Cupiditate architecto voluptate beatae sunt, laboriosam suscipit excepturi consectetur?</p>
+                    <h3>2004-2006 ABC Studies</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, odit delectus quas repellendus qui, temporibus, laborum deleniti quasi unde recusandae culpa? Cupiditate architecto voluptate beatae sunt, laboriosam suscipit excepturi consectetur?</p>
+                </div>
+                <div>
+                    <h2 class="colored">Work Experience</h2>
+                    <h3>2010-2013 ABC Company</h3>
+                    <p>Lorem ipsum dolor sit amet</p>
+                    <h3>2013-2015 Zoom Company</h3>
+                    <p>Lorem ipsum dolor sit amet</p>
+                </div>
+            </section>
+        </div>
+        <footer class="col-16">
+            <div id="div1"></div>
+            <div id="div2"></div>
+            <div id="div3"></div>
+        </footer>
+
+        <script>
+            var firstCan = document.getElementById("canvas1");
+            var secondCan = document.getElementById("canvas2");
+            var thirdCan = document.getElementById("canvas3");
+            var forthCan = document.getElementById("canvas4");
+            var fCtx = firstCan.getContext("2d");
+            var sCtx= secondCan.getContext("2d");
+            var tCtx = thirdCan.getContext("2d");
+            var lastCtx = forthCan.getContext("2d");
+
+            fCtx.fillStyle='rgb(214, 214, 214)';
+            fCtx.beginPath();
+            fCtx.arc(30, 30, 20, Math.PI / 180 * 0, Math.PI / 180 * 360);
+            fCtx.fill();
+
+            fCtx.fillStyle='rgba(235, 151, 25, 0.856)';
+            fCtx.beginPath();
+            fCtx.arc(30, 30, 20, Math.PI / 180 * 0, Math.PI / 180 * 180);
+            fCtx.fill();
+            fCtx.fillStyle='rgba(235, 151, 25, 0.856)';
+            fCtx.beginPath();
+            fCtx.arc(30, 30, 20, Math.PI / 180 * 90, Math.PI / 180 * 270);
+            fCtx.fill();
+
+            fCtx.fillStyle='white';
+            fCtx.beginPath();
+            fCtx.arc(30, 30, 15, Math.PI / 180 * 0, Math.PI / 180 * 360);
+            fCtx.fill();
+
+            fCtx.fillStyle='black';
+            fCtx.font='10px sans-serif';
+            fCtx.fillText("AI", 25, 32);
+
+
+
+            sCtx.fillStyle='rgb(214, 214, 214)';
+            sCtx.beginPath();
+            sCtx.arc(30, 30, 20, Math.PI / 180 * 0, Math.PI / 180 * 360);
+            sCtx.fill();
+
+            sCtx.fillStyle='rgba(25, 204, 235, 0.856)';
+            sCtx.beginPath();
+            sCtx.arc(30, 30, 20, Math.PI / 180 * 270, Math.PI / 180 * 90);
+            sCtx.fill();
+            sCtx.fillStyle='rgba(25, 204, 235, 0.856)';
+            sCtx.beginPath();
+            sCtx.arc(30, 30, 20, Math.PI / 180 * 60, Math.PI / 180 * 150);
+            sCtx.fill();
+
+            sCtx.fillStyle='white';
+            sCtx.beginPath();
+            sCtx.arc(30, 30, 15, Math.PI / 180 * 0, Math.PI / 180 * 360);
+            sCtx.fill();
+
+            sCtx.fillStyle='black';
+            sCtx.font='10px sans-serif';
+            sCtx.fillText("Ps", 25, 32);
+
+
+
+            tCtx.fillStyle='rgb(214, 214, 214)';
+            tCtx.beginPath();
+            tCtx.arc(30, 30, 20, Math.PI / 180 * 0, Math.PI / 180 * 360);
+            tCtx.fill();
+
+            tCtx.fillStyle='rgba(252, 24, 24, 0.63)';
+            tCtx.beginPath();
+            tCtx.arc(30, 30, 20, Math.PI / 180 * 270, Math.PI / 180 * 90);
+            tCtx.fill();
+
+            tCtx.fillStyle='white';
+            tCtx.beginPath();
+            tCtx.arc(30, 30, 15, Math.PI / 180 * 0, Math.PI / 180 * 360);
+            tCtx.fill();
+
+            tCtx.fillStyle='black';
+            tCtx.font='10px sans-serif';
+            tCtx.fillText("Ae", 25, 32);
+
+
+
+            lastCtx.fillStyle='rgb(214, 214, 214)';
+            lastCtx.beginPath();
+            lastCtx.arc(30, 30, 20, Math.PI / 180 * 0, Math.PI / 180 * 360);
+            lastCtx.fill();
+
+            lastCtx.fillStyle='rgba(25, 204, 235, 0.856)';
+            lastCtx.beginPath();
+            lastCtx.arc(30, 30, 20, Math.PI / 180 * 270, Math.PI / 180 * 90);
+            lastCtx.fill();
+            lastCtx.fillStyle='rgb(214, 214, 214)';
+            lastCtx.beginPath();
+            lastCtx.arc(30, 30, 20, Math.PI / 180 * 360, Math.PI / 180 * 180);
+            lastCtx.fill();
+
+            lastCtx.fillStyle='white';
+            lastCtx.beginPath();
+            lastCtx.arc(30, 30, 15, Math.PI / 180 * 0, Math.PI / 180 * 360);
+            lastCtx.fill();
+
+            lastCtx.fillStyle='black';
+            lastCtx.font='10px sans-serif';
+            lastCtx.fillText("CSS", 20, 33);
+
+            
+        </script>
+    </body>
+</html>

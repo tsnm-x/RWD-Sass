@@ -1,0 +1,129 @@
+.col-1 {
+  width: 8.3333333333%; }
+
+.col-2 {
+  width: 16.6666666667%; }
+
+.col-3 {
+  width: 25%; }
+
+.col-4 {
+  width: 33.3333333333%; }
+
+.col-5 {
+  width: 41.6666666667%; }
+
+.col-6 {
+  width: 50%; }
+
+.col-7 {
+  width: 58.3333333333%; }
+
+.col-8 {
+  width: 66.6666666667%; }
+
+.col-9 {
+  width: 75%; }
+
+.col-10 {
+  width: 83.3333333333%; }
+
+.col-11 {
+  width: 91.6666666667%; }
+
+.col-12 {
+  width: 100%; }
+
+* {
+  box-sizing: border-box; }
+
+nav {
+  color: black;
+  background-color: white;
+  font-size: 1rem;
+  text-align: center; }
+
+#childDiv1, #headline, #btn2 {
+  color: white;
+  background-color: black;
+  font-size: 1rem; }
+
+#headline {
+  font-size: 2.5rem; }
+
+#btn1 {
+  color: white;
+  background-color: grey;
+  font-size: 1rem; }
+
+#childDiv2 {
+  background-color: #dddddd; }
+
+.decen {
+  margin-right: 1%;
+  display: flex;
+  flex-direction: column;
+  padding: 10% 0%; }
+
+#imgDiv {
+  align-items: center; }
+  #imgDiv #img1 {
+    width: 70%; }
+
+#btn1, #btn2, #cards {
+  text-align: center; }
+
+#btn2 {
+  width: 20%; }
+
+header, footer {
+  color: white;
+  background-color: #4c8178;
+  font-size: 1rem; }
+
+footer #headline2 {
+  font-size: 0.9rem; }
+footer #info {
+  color: #73b6ab;
+  background-color: #4c8178;
+  font-size: 0.6rem; }
+
+#cards {
+  font-size: 1.5rem;
+  padding: 1%; }
+
+#blue {
+  border: 1px solid grey; }
+  #blue .theme, #blue .next {
+    color: white;
+    background-color: #723e91;
+    font-size: 1rem; }
+  #blue .next {
+    font-size: 0.7rem; }
+  #blue #movies {
+    color: #723e91; }
+
+#black {
+  margin-left: 1%;
+  border: 1px solid grey; }
+  #black .theme, #black .next {
+    color: white;
+    background-color: black;
+    font-size: 1rem; }
+  #black .next {
+    font-size: 0.7rem; }
+
+nav, #childDiv2, #childDiv4 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  display: flex; }
+
+#childDiv1, #headline, #div3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+#btn1, #btn2, #childDiv1, #headline, #childDiv2, #div3, header, main, footer, .tcontent, .theme, .next {
+  padding: 1%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+
+/*# sourceMappingURL=1.css.map */

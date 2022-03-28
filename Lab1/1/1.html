@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            min-height: 100vh;
+
+        }
+        header{
+            width: 100vw;
+            height: 20vh;
+            background-color: rgb(58, 58, 58);
+        }
+        main{
+            display: flex;
+            flex-direction: row;
+        }
+        nav{
+        width: 100vw;
+        height: 5vh;
+        background-color: rgb(177, 177, 177);
+        }
+        #left{
+            width: 20vw;
+            height: 70vh;
+            background-color: grey;
+            display: flex;
+            flex-direction: column;
+        }
+        #login{
+            width: 20vw;
+            height: 20vh;
+            border-bottom: 1px solid black;
+        }
+        #outline{
+            width: 20vw;
+            height: 50vh;
+            display: flex;
+            flex-direction: column;
+        }
+        #social{
+            width: 20vw;
+            height: 30vh;
+            border-bottom: 1px solid black;
+
+        }
+        video{
+            margin-top: 1vw;
+            width: 20vw;
+            height: 20vh;
+        }
+        article{
+            width: 60vw;
+            height: 70vh;
+            background-color: rgb(58, 58, 58);
+        }
+        aside{
+            width: 20vw;
+            height: 70vh;
+            display: flex;
+            flex-direction: column;
+            background-color: grey;
+        }
+        #image,img{
+            width: 20vw;
+            height: 35vh;
+        }
+        footer{
+            width: 100vw;
+            height: 5vh;
+            background-color: grey;
+        }
+        header,footer,article,nav,aside,div{
+            font-size: 1em;
+            text-align: center;
+        }
+        @media screen and (max-width:768px) {
+            main{
+                display: flex;
+                flex-direction: column;
+            }
+            article{
+                width: 100vw;
+            }
+            #left{
+                display: none;
+            }
+            aside{
+                width: 100vw;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+        @media screen and (max-width:576px) {
+            main{
+                display: flex;
+                flex-direction: column;
+            }
+            article{
+                width: 100vw;
+            }
+            #left{
+                display: none;
+            }
+            aside{
+                width: 100vw;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>Website logo</header>
+    <nav>Navigation bar</nav>
+    <main>
+        <div id="left">
+            <div id="login">Login Div</div>
+            <div id="outline">
+                <div id="social">Social</div>
+                <div>
+                    <div>Video</div>
+                    <video src="1.mp4"></video>
+                </div>
+            </div>
+        </div>
+        <article>Content</article>
+        <aside>
+            <div id="image"><img src="avatar.png" alt=""></div>
+        </aside>
+    </main>
+    <footer></footer>
+</body>
+</html>

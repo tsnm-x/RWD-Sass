@@ -1,0 +1,105 @@
+@import "0.scss";
+
+@mixin flexColumn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@mixin font{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+@mixin format($color: black, $backgroundColor:white , $fsize: 1rem) {
+    color: $color;
+    background-color: $backgroundColor;
+    font-size: $fsize;
+
+}
+*{
+    box-sizing: border-box;
+}
+nav{
+    @include format();
+    text-align: center
+}
+#childDiv1,#btn2{
+    @include format(white,black);
+}
+#headline{
+    @extend #childDiv1;
+    font-size: 2.5rem;
+}
+#btn1{
+    @include format(white, grey);
+}
+#childDiv2{
+    background-color: rgb(221, 221, 221);
+    
+}
+.decen{
+    margin-right: 1%;
+    display: flex;
+    flex-direction: column;
+    padding: 10% 0%;
+    
+}
+#imgDiv{
+    align-items: center;
+    #img1{
+        width: 70%;
+    }
+}
+#btn1,#btn2,#cards{
+    text-align: center;
+}
+#btn2{
+    width: 20%;
+}
+header,footer{
+    @include format(white, rgb(76, 129, 120));
+}
+footer{
+    #headline2{
+        font-size: 0.9rem;
+    }
+    #info{
+        @include format(rgb(115, 182, 171), rgb(76, 129, 120), 0.6rem)
+    }
+}
+#cards{
+    font-size: 1.5rem;
+    padding: 1%;
+}
+#blue{
+    .theme,.next{
+        @include format(white, rgb(114, 62, 145))
+    }
+    .next{
+        font-size: 0.7rem;
+    }
+    #movies{
+       color: rgb(114, 62, 145); 
+    }
+    border: 1px solid grey;
+
+}
+#black{
+    .theme,.next{
+        @include format(white, black )
+    }
+    .next{
+        font-size: 0.7rem;
+    }
+    margin-left: 1%;
+    border: 1px solid grey;
+}
+nav,#childDiv2,#childDiv4{
+    @include font;
+    display: flex;
+}
+#childDiv1,#div3{
+    @include flexColumn;
+}
+#btn1,#btn2,#childDiv1,#childDiv2,#div3,header,main,footer,.tcontent,.theme,.next{
+    padding: 1%;
+    @include font;
+}

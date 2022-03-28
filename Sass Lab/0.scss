@@ -1,0 +1,9 @@
+$total: 12;
+@function grid($sec){
+    @return percentage($sec/$total);
+}
+@for $i from 1 through $total{
+    .col-#{$i}{
+        width: grid($i);
+    }
+}
